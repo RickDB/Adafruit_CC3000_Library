@@ -103,7 +103,7 @@ netapp_pingreport_args_t pingReport;
 #define CHECK_SUCCESS(func,Notify,errorCode)  {if ((func) != CC3000_SUCCESS) { CHECK_PRINTER CC3KPrinter->println(F(Notify)); return errorCode;}}
 
 #define MAXSSID           (32)
-#define MAXLENGTHKEY      (64)  /* Cleared for 32 bytes by TI engineering 29/08/13 */
+#define MAXLENGTHKEY      (64)  /* Cleared for 64 bytes
 
 #define MAX_SOCKETS 32  // can change this
 boolean closed_sockets[MAX_SOCKETS] = {false, false, false, false};
